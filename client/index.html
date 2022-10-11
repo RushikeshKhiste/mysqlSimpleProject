@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express and mysql</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="name">Name: </label>
+        <input type="text" name="myName" id="input-name">
+        <button class="add-name-btn">Add</button>
+        <div class="search_box">
+            <input type="text" id="search-input" placeholder="search here">
+            <button id="search-name-btn">search</button>
+        </div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>DATE_ADDED</th>
+                    <th>DELETE</th>
+                    <th>UPDATE</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+
+        <section hidden id="updateRow">
+            <label for="name">Name: </label>
+            <input type="text" id="edit-row-input">
+            <button id="update-row-btn">Update</button>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
